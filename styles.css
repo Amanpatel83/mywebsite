@@ -155,6 +155,7 @@ a{
     font-weight: bold;
     transition: all 3s;
 }
+}
 .btn-pink {
     /* background-color: var(--bgOrange); */
     background-color: #4e45d5;
