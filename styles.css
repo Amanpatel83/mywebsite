@@ -1,77 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
 
-*{
-  margin:0;
-  padding:0;
-  /* box-sizing:border-box; */
+* {
+  margin: 0;
+  padding: 0;
   font-family: "Be Vietnam Pro", sans-serif;
   scroll-behavior: smooth;
 }
+
 :root {
   --bgOrange: #e84949;
 }
 
-#wrapper{
-    height:100vh;
-    overflow-y:auto;
-    overflow-x: hidden;
-   
+#wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-
-.container{
-    width:1200px;
-    margin:0 auto;
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+ 
 }
 
-.navbar{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding-top:1rem;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
 
-.logo{
-    width:80px;
+.logo {
+  width: 80px;
 }
 
-.logo-container{
-    display:flex;
-    justify-content: baseline;
-    align-items: center;
+.logo-container {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
 }
 
-.logo-text{
-    margin-left:-1.2rem;
-    font-size:28px;
+.logo-text {
+  margin-left: -1.2rem;
+  font-size: 28px;
 }
 
-.nav-items{
-    display:flex;
-    gap:2rem;
-    padding: 0 4em;
+.nav-items {
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
-.nav-items div{
-    font-size:20px;
-    font-weight:500;
-    cursor:pointer;
-   
-}
-.nav-items div a{
-    color:black;
-    /* transition: all 5s ease; */
+.nav-items div {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
+.nav-items div a {
+  color: black;
+  
+}
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
-.nav-items div:hover{
-    transition:0.8s;
-    font-weight: bold;
+.nav-items div:hover {
+  font-weight: bold;
 }
 
 .hero-section{
@@ -106,10 +102,11 @@ a{
     gap: 2rem;
 }
 
-.hero-section-heading{
-    font-size: 35px;
-    color: #343d68;
-    font-weight: 500;
+
+.hero-section-heading {
+  font-size: 2.5rem; /* Responsive font size */
+  color: #343d68;
+  font-weight: 500;
 }
 
 .role{
@@ -117,17 +114,47 @@ a{
     font-weight: 800;
 }
 
-.hero-section-sub-heading{
-    font-size: 45px;
-    line-height: 45px;
+
+.hero-section-sub-heading {
+  font-size: 3.5rem; /* Responsive font size */
+  line-height: 3.5rem; /* Responsive line height */
 }
 
-.hero-section-description{
-    margin-top: 1rem;
-    width: 70%;
-    font-weight: 500;
-}
 
+.hero-section-description {
+  margin-top: 1rem;
+  max-width: 100%;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+  }
+  .hero-section{
+    flex-direction: column;
+  }
+
+  .hero-section-heading {
+    font-size: 2rem;
+  }
+
+  .hero-section-sub-heading {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .faded-text{
+    bottom: -8%;
+    left: 0%;
+    font-weight: bold;
+    transition: all 3s;
+}
 .btn-pink {
     /* background-color: var(--bgOrange); */
     background-color: #4e45d5;
